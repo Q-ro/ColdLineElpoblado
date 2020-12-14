@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1710539725710552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4634638749660794}
+  - component: {fileID: 114789652102144498}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4634638749660794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710539725710552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114789652102144498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710539725710552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3d4796aa63e2f40babb874f4b8ac41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfEnemies: 48
+  meleeWeapons:
+  - meleeWeapon: 0
+    isWeaponLethal: 0
+  - meleeWeapon: 5
+    isWeaponLethal: 1
+  - meleeWeapon: 6
+    isWeaponLethal: 1
+  - meleeWeapon: 4
+    isWeaponLethal: 0
+  rangeWeapons:
+  - rangeWeapon: 1
+    maxAmmo: 10
+    currentAmmo: 10
+    fireRate: 3.5
+    bulletSpawnOffsetX: 0.1445
+    bulletSpawnOffsetY: -0.015
+  - rangeWeapon: 2
+    maxAmmo: 25
+    currentAmmo: 25
+    fireRate: 1.5
+    bulletSpawnOffsetX: 0.155
+    bulletSpawnOffsetY: -0.006
+  - rangeWeapon: 3
+    maxAmmo: 100
+    currentAmmo: 100
+    fireRate: 0.5
+    bulletSpawnOffsetX: 0.1546
+    bulletSpawnOffsetY: -0.015
+  - rangeWeapon: 0
+    maxAmmo: 0
+    currentAmmo: 0
+    fireRate: 0
+    bulletSpawnOffsetX: 0
+    bulletSpawnOffsetY: 0
+  spritesForWeapons:
+  - weapon: 0
+    weaponSprite: {fileID: 21300042, guid: f241cfef8880dd347be00acc6686b2bd, type: 3}
+  - weapon: 1
+    weaponSprite: {fileID: 21300032, guid: f241cfef8880dd347be00acc6686b2bd, type: 3}
+  - weapon: 2
+    weaponSprite: {fileID: 21300030, guid: f241cfef8880dd347be00acc6686b2bd, type: 3}
+  - weapon: 3
+    weaponSprite: {fileID: 21300034, guid: f241cfef8880dd347be00acc6686b2bd, type: 3}
+  - weapon: 5
+    weaponSprite: {fileID: 21300036, guid: f241cfef8880dd347be00acc6686b2bd, type: 3}
+  - weapon: 6
+    weaponSprite: {fileID: 21300038, guid: f241cfef8880dd347be00acc6686b2bd, type: 3}
+  - weapon: 4
+    weaponSprite: {fileID: 21300042, guid: f241cfef8880dd347be00acc6686b2bd, type: 3}
