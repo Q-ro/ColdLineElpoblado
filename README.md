@@ -1,2 +1,3 @@
 # Cold Line El Poblado
- A Hotline miami De-Make usign unity
+
+A Hotline miami like NES-styled De-Make made with Unity
