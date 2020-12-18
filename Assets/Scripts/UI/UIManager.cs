@@ -29,8 +29,20 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        _highScore = PlayerPreferenceManager.GetHighscore();
         PlayerPreferenceManager.SetScore(_currentScore);
+
+        if (PlayerPreferenceManager.GetHighscore() > 0)
+        {
+            _highScore = PlayerPreferenceManager.GetHighscore();
+            
+        }
+        else
+        {
+            PlayerPreferenceManager.SetHighscore(9000);
+            _highScore = 9000;
+        }
+        
+        this.UpdateHighScore(_highScore);
     }
 
 

@@ -138,6 +138,7 @@ public class GameManager : MonoBehaviour
     public void WinGame()
     {
         // UIManager.UIManagerInstance.ShowGameOverMenu();
+        
         SceneManager.LoadScene(4);
     }
 }
